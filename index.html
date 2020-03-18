@@ -4,87 +4,149 @@
 <head>
     <meta charset=utf-8>
     <link rel="stylesheet" type="text/css" href="CSS/GagarinCSS.css">
+    <style>
+        footer {padding-top: 5%;}
+    </style>
     <title>Gagarin</title>
 </head>
 <body>
     <nav>
-        <div class="logo"><img class="ico" src="ICON/Gagarin/icons8-home-50.png"/></div>
+        <img class="logo" src="ICON/Gagarin/logoGagarin.png"/>
+        <div class="navspacer"></div>
         <ul>
-            <li class="uno">
+            <li class="letterspacer">
                 <div class="capa_ico">
-                    <a href="GagarinHome.html" target="_self"><img class="ico" src="ICON/Gagarin/icons8-home-50.png"/></a>
+                    <a href="index.html" target="_self"><img class="ico" src="ICON/Gagarin/icons8-home-50.png"/></a>
                 </div>Home
             </li>
-            <li class="dos">
+            <li class="letterspacer">
             <div class="capa_ico">
-                <a href="Mars2020.html" target="_self"><img class="ico" src="ICON/Gagarin/icons8-planet-50.png"/></a>
+                <a href="HTML/Mars2020.html" target="_self"><img class="ico" src="ICON/Gagarin/icons8-planet-50.png"/></a>
                 </div>Mars 2020
             </li>
-            <li class="tres">
+            <li class="letterspacer">
                 <div class="capa_ico">
-                   <a href="" target="_self"> <img class="ico" src="ICON/Gagarin/icons8-news-50.png"/></a>
+                   <a href="HTML/NewLetters.html"target="_self"> <img class="ico" src="ICON/Gagarin/icons8-news-50.png"/></a>
                 </div>News Letter
             </li>
-            <li class="cuatro">
+            <li class="letterspacer">
             <div class="capa_ico">
-                <a href="AboutUs.html" target="_self"><img class="ico" src="ICON/Gagarin/icons8-selfies-50.png"/></a>
+                <a href="HTML/AboutUs.html" target="_self"><img class="ico" src="ICON/Gagarin/icons8-selfies-50.png"/></a>
                 </div>About Us
             </li>
         </ul>
     </nav>
-    <div class="container">
-            <div class="rotar">
-        <img class="rotar" src="IMG/Wireframe/Wireframe%20Box.jpg">
-    </div>
-    </div>
-     <section class="gallery">
+    
+    <div class="menuspacer"></div>
+    
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="IMG/BlueOrigin.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="IMG/Falcon.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="IMG/ULA1.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+    
+<!-- Script -->
+    <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 8000); // Change image every 2 seconds
+}
+</script>
+        
+        <div class="newsimg">
+            <a href="HTML/IndexStory1.html" target="_self">
+                <img src="IMG/IndexStoryThumbnail11.jpg">
+            </a>
+        </div>
+        <div class="newsimg">
+            <a href="HTML/IndexStory2.html" target="_self">
+                <img src="IMG/IndexStoryThumbnail22.jpg">
+            </a>
+        </div>
+        <div class="newsimg">
+            <a href="HTML/IndexStory3.html" target="_self">
+                <img src="IMG/IndexStoryThumbnail33.jpg">
+            </a>
+        </div>
+        <div class="newsimg">
+            <a href="HTML/IndexStory4.html" target="_self">
+                <img src="IMG/IndexStoryThumbnail44.jpg">
+            </a>
+        </div>
          <div class="newsimg">
-             <img src="IMG/pluton.png">
-        </div>
-        <div class="newsimg">
-            <img src="IMG/pluton.png">
-        </div>
-        <div class="newsimg">
-            <img src="IMG/pluton.png">
-        </div>
-        <div class="newsimg">
-             <img src="IMG/pluton.png">
-        </div>
-         <div class="newsimg">
-            <img src="IMG/pluton.png">
+            <a href="HTML/IndexStory5.html" target="_self">
+                <img src="IMG/IndexStoryThumbnail55.jpg">
+            </a>
          </div>
         <div class="newsimg">
-             <img src="IMG/pluton.png">
+            <a href="HTML/IndexStory6.html" target="_self">
+                <img src="IMG/IndexStoryThumbnail66.jpg">
+            </a>
         </div>
         <div class="newsimg">
-            <img src="IMG/pluton.png">
+            <a href="HTML/IndexStory7.html" target="_self">
+                <img src="IMG/IndexStoryThumbnail77.jpg">
+            </a>
         </div>
         <div class="newsimg">
-            <img src="IMG/pluton.png">
+            <a href="HTML/IndexStory8.html" target="_self">
+                <img src="IMG/IndexStoryThumbnail88.jpg">
+            </a>
         </div>
         <div class="newsimg">
-            <img src="IMG/pluton.png">
+            <a href="HTML/IndexStory9.html" target="_self">
+                <img src="IMG/IndexStoryThumbnail99.jpg">
+            </a>
         </div>
-        <div class="newsimg">
-            <img src="IMG/pluton.png">
-        </div>
-        <div class="newsimg">
-                <img src="IMG/pluton.png">
-         </div>
-        <div class="newsimg">
-            <img src="IMG/pluton.png"/>
-        </div>
-    </section>
 </body>
-    <footer>
-        <div class="logofooter">
-            <img src="ICON/Gagarin/icons8-home-50.png"/>
-        </div>
-        <div class="cr">
-            @Gagarin, C.A. 2020. Eclipse Wizards
-        </div>
-        <section class="social">
-            Follow us: <img src="ICON/Gagarin/icons8-facebook-50.png" /><img src="ICON/Gagarin/icons8-instagram-50.png" /><img src="ICON/Gagarin/icons8-linkedin-50.png"/>
-        </section>
-    </footer>
+<footer>
+    <div class="logofooter">
+        <img src="ICON/Gagarin/logoGagarin.png"/>
+    </div>
+    <div class="cr">
+        ©Gagarin, C.A. 2020. Eclipse Wizards
+    </div>
+    <div class="footerspacer">
+     </div>
+</footer>
 </html>
